@@ -1,0 +1,74 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #0F0F0F;
+    font-family: 'Gelasio', serif;
+    font-size: 1.6rem;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.inicioflex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#inicio{
+    background-image: url("/public/img/Fondo1.png");
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100vh;
+}
+.cabecera{    
+    background: rgba(0,0,0,0.3);
+}
+.barra{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem ;
+}
+.navegacion a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.navegacion a:hover{
+    color:red;
+}
+.navegacion a:last-of-type{
+    margin-right: 0rem;
+}
+.contenedor h1{
+    font-size: 9rem;
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color:#fff;
+}
+.contenedor h1>span{
+    text-align: center;
+    display: block;
+    font-size: 1.6rem;
+}
+.botoncontacto{
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.botoncontacto button{
+    background-color: red;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .8rem;
+}
+.botoncontacto button:hover{
+    background-color: #fff;
+}
