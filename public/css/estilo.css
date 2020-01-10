@@ -27,6 +27,11 @@ body {
     width: 95%;
 }
 
+section {
+    min-height: 40rem;
+    max-height: 100%;
+}
+
 img {
     max-width: 100%;
 }
@@ -43,6 +48,31 @@ img {
 
 .no-margin {
     margin: 0;
+}
+
+@media(min-width:678px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/*   fondo con logo */
+
+#servicios,
+#contacto {
+    background-color: gray;
+    background-image: url("../img/MUESTRA\ FONDO\ HD.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -173,23 +203,11 @@ button {
 
 /******************SOBRE MI**********************/
 
-.dos-columnas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-}
-
 
 /************************************************/
 
 
 /******************SERVICIOS**********************/
-
-.tres-columnas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-}
 
 
 /************************************************/
