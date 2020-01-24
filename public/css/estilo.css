@@ -48,6 +48,10 @@ p {
     letter-spacing: 0;
 }
 
+footer {
+    font-size: 1rem;
+}
+
 
 /******************************************************************/
 
@@ -231,6 +235,27 @@ button {
 #sobremi .redes {
     display: flex;
     justify-content: center;
+}
+
+#sobremi .redes i {
+    margin: auto 1.5rem;
+    font-size: 3rem;
+}
+
+.facebook {
+    color: #68A8E7;
+}
+
+.instagram {
+    color: coral;
+}
+
+.soundcloud {
+    color: #E33F17;
+}
+
+.whatsapp {
+    color: darkgreen;
 }
 
 
