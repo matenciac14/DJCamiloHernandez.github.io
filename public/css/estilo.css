@@ -19,6 +19,10 @@ body {
     background-color: #0F0F0F;
     font-size: 1.8rem;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    /*200-300-500-700*/
+    letter-spacing: .1rem;
 }
 
 .contenedor {
@@ -34,6 +38,14 @@ section {
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    text-shadow: 0.1em 0.1rem 0.06em #D2D6F2
+}
+
+p {
+    letter-spacing: 0;
 }
 
 
@@ -132,29 +144,34 @@ img {
     text-align: center;
     display: block;
     font-size: 1.8rem;
-    margin: 1rem auto;
+    padding: 1rem auto;
 }
 
 @media(min-width:678px) {
     .barra {
-        padding-top: 2.5rem;
+        padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
     }
     .navegacion {
         display: block;
         width: auto;
-        background-color: transparent;
+        padding-top: 1rem;
     }
     .navegacion a {
         display: inline;
-        margin-right: 2rem;
+        font-weight: 300;
+        padding: 1rem 1rem .5rem 1rem;
     }
     .navegacion a::last-of-type {
         margin: 0;
     }
     .navegacion-movil {
         display: none;
+    }
+    .navegacion :hover {
+        border-bottom: .2rem solid #fff;
+        transition-duration: 0.8s;
     }
 }
 
@@ -163,27 +180,35 @@ img {
 
 .texto-header {
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 45vh;
 }
 
 .texto-header h1 {
-    font-size: 2.7rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 700;
     color: black;
+    width: 100%;
 }
 
 .texto-header h1 span {
     font-size: 1.6rem;
     text-align: center;
     display: block;
+    text-shadow: none;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .4);
 }
 
 @media(min-width:678px) {
     .texto-header {
-        margin-top: 50vh;
+        margin-top: 45vh;
     }
     .texto-header h1 {
-        font-size: 5rem;
+        font-size: 8rem;
+    }
+    .texto-header h1 span {
+        width: 100%;
     }
 }
 
@@ -203,6 +228,11 @@ button {
 
 /******************SOBRE MI**********************/
 
+#sobremi .redes {
+    display: flex;
+    justify-content: center;
+}
+
 
 /************************************************/
 
@@ -214,12 +244,19 @@ button {
     text-align: center;
 }
 
+@media(min-width:678px) {
+    #servicios {
+        padding: 8rem 0;
+        text-align: center;
+    }
+}
+
 .serv1,
 .serv2,
 .serv3 {
     border: .1rem solid white;
     border-radius: .5rem;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 
 #servicios h2 {
