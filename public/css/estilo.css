@@ -267,6 +267,7 @@ button {
 #servicios {
     padding: 2rem 0;
     text-align: center;
+    position: relative;
 }
 
 @media(min-width:678px) {
@@ -282,6 +283,7 @@ button {
     border: .1rem solid white;
     border-radius: .5rem;
     margin: 2rem auto;
+    position: relative;
 }
 
 #servicios h2 {
@@ -293,10 +295,10 @@ button {
 #servicios p {
     text-align: justify;
     margin: 1rem;
+    margin-bottom: 6rem;
 }
 
 #servicios .img {
-    position: relative;
     width: 100%;
     height: 25rem;
     background-color: rgba(255, 255, 255, .4);
@@ -304,9 +306,12 @@ button {
 
 #servicios .btn-serv {
     width: 100%;
+    position: absolute;
     background-color: rgba(255, 255, 255, .4);
     border-radius: 0;
-    margin: 1rem 0 0 0;
+    margin:5rem 0 0 0;
+    bottom: 0;
+    left: 0;
 }
 
 
