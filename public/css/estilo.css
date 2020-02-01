@@ -122,6 +122,7 @@ footer {
 .navegacion-movil {
     height: 5rem;
     width: 5rem;
+    padding-top: 1rem;
 }
 
 .navegacion-movil span {
