@@ -104,7 +104,6 @@ footer {
     background-position: center center;
     min-height: 100vh;
     max-height: 100%;
-    padding-top: 1rem;
 }
 
 .site-header a {
@@ -141,7 +140,7 @@ footer {
     position: absolute;
     width: 95%;
     margin: 0 auto;
-    display: none;
+    /*display: none;*/
 }
 
 .navegacion a {
@@ -153,16 +152,19 @@ footer {
 
 @media(min-width:678px) {
     .barra {
-        padding-top: 1rem;
-        display: flex;
-        justify-content: flex-end;
+        margin: 0;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 1rem;
     }
     .navegacion {
+        margin-top: 0;
+        position: relative;
         display: block;
         width: auto;
-        padding-top: 1rem;
+        padding: 1rem 0;
     }
     .navegacion a {
+        margin: 0;
         display: inline;
         font-weight: 300;
         padding: 1rem 1rem .5rem 1rem;
@@ -272,7 +274,7 @@ button {
 
 @media(min-width:678px) {
     #servicios {
-        padding: 8rem 0;
+        padding: 3rem 0;
         text-align: center;
     }
 }

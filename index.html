@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/css/estilo.css">
     <title>Dj Camilo Hernández</title>
     <script src="https://kit.fontawesome.com/8855619836.js"></script>
+    <script src="./public/JS/smooth-scroll.js"></script>
 </head>
 
 <body>
@@ -27,12 +28,12 @@
                     <span></span>
                 </div>
                 <nav class="navegacion">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#galeria">Galería</a>
-                    <a href="#experiencia">Experiencia</a>
-                    <a href="#contacto">Contacto</a>
+                    <a ata-scroll href="#inicio">Inicio</a>
+                    <a ata-scroll href="#sobremi">Sobre mí</a>
+                    <a ata-scroll href="#servicios">Servicios</a>
+                    <a ata-scroll href="#galeria">Galería</a>
+                    <a ata-scroll href="#experiencia">Experiencia</a>
+                    <a ata-scroll href="#contacto">Contacto</a>
                 </nav>
             </div>
             <!--barra-->
@@ -128,3 +129,11 @@
 </footer>
 
 </html>
+
+<script>
+	// All animations will take exactly 500ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 2200,
+	speedAsDuration: true
+});
+</script>
